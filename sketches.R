@@ -28,18 +28,17 @@ f + geom_step()
 # Combined Giving Day Stuff
 
 p1 <- ggplot( ) + geom_step(data = GivingDay, aes(x = Year, y = CC, color = 'red'), color = 'red') + xlab('Year')+
-  ylab('Fund Raised')
+  ylab('Fund Raised') + coord_cartesian(xlim=c(2012,2018), ylim =c(200000,5000000))
 p2 <- ggplot( ) + geom_step(data = GivingDay, aes(x = Year, y = Athletics, color = 'blue'), color = 'blue') + xlab('Year')+
-  ylab('Fund Raised') 
+  ylab('Fund Raised') + coord_cartesian(xlim=c(2012,2018), ylim =c(200000,5000000))
 p3 <- ggplot( ) + geom_step(data = GivingDay, aes(x = Year, y = Columbia.Engineering, color = 'green'), color = 'green') + xlab('Year')+
-  ylab('Fund Raised')
+  ylab('Fund Raised') + coord_cartesian(xlim=c(2012,2018), ylim =c(200000,5000000))
 p4 <- ggplot( ) + geom_step(data = GivingDay, aes(x = Year, y = Columbia.Business.School, color = 'yellow'), color = 'yellow') + xlab('Year')+
-  ylab('Fund Raised')
+  ylab('Fund Raised') + coord_cartesian(xlim=c(2012,2018), ylim =c(200000,5000000))
 p5 <- ggplot( ) + geom_step(data = GivingDay, aes(x = Year, y = Barnard.College, color = 'pink'), color = 'pink') + xlab('Year')+
-  ylab('Fund Raised')
+  ylab('Fund Raised') + coord_cartesian(xlim=c(2012,2018), ylim =c(200000,5000000))
 p6 <- ggplot( ) + geom_step(data = GivingDay, aes(x = Year, y = GS, color = 'purple'), color = 'purple') + xlab('Year')+
-  ylab('Fund Raised')
-
+  ylab('Fund Raised') + coord_cartesian(xlim=c(2012,2018), ylim =c(200000,5000000))
 
 grid.arrange(
   p1,
